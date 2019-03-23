@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz Practice</title>
+    <!--<link type="stylesheet" href="style.css">-->
+</head>
+<style>
+    #frame001 {
+    background-color: white;
+    border: 4px solid black;
+    width: 400px;
+    height: auto; /*auto will create space dependent upon the content within the frame, you can set it to 400px or anything*/
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10 px;
+}
+
+/*For the start, next and end of quiz button*/
+.buttons001 {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+/*For the four options*/
+.buttons002 {
+    background-color: lightblue;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 50px;
+}
+
+#text001 {
+    text-align: center;
+}
+
+#text002 {
+    text-align: left;
+}
+
+/*Green is for the correct answer, Red is for the incorrect answer*/
+#green001 {
+    color: green;
+}
+
+#red001 {
+    color: red;
+}
+</style>
+<body>
+    
+    <div id="frame001">
+        <div id="text001">
+            <!--This is for the sake of creating a title/headline-->
+            <h2>Quiz</h2>
+            <p>Question: <text id="number001">0</text></p>
+            <p>Score: <text id="score001">0</text></p>
+
+            <hr />
+
+            <div id="message001">Click Begin to start</div>
+        </div>
+        <div id="text002">
+            <div id="question001"></div>
+            <div id="option001"></div>
+            <div id="option002"></div>
+            <div id="option003"></div>
+            <div id="option004"></div>
+            <div id="answer001"></div>
+
+            <div id="text001">
+                <div id="disappear001"><button class="buttons001" onclick="begin001()">Begin</button></div>
+            </div>
+            <div id="next001"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="quizapp.js"></script>
+</body>
+
+</html>
