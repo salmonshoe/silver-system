@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Offside" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <title>html 2</title>
+</head>
+
+<body class="index">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="header">Project One 🎵</h1>
+            <div class="artist">
+                <h2><div id="nameArtist">Jack Johnson</div></h2>
+            </div>
+        </div>
+        <div class="onTour" style="width: 28rem;">
+            <div class="tourCard">
+                <p class="card-text">SHOWS IF/WHERE A BAND IS ON TOUR</p>
+            </div>
+        </div>
+        <div class="artistCard" style="width: 25rem;">
+            <img src="https://www.ultimate-guitar.com/static/article/news/5/73755_0_wide_ver1551710924.jpg@642"
+                class="card-img">
+            <div class="card-body">
+                <div class="list-group list-group-flush">
+                    <div id="artistInfo">Top 5 Songs</div>
+                    <div id="five-songs"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="audioPreview">
+            <button type="button" class="btn playButton btn-lg">play</button>
+            <button type="button" class="btn stopButton btn-lg">stop</button>
+
+        </div>
+        <br>
+        <br>
+        <div class="lyricsCard" style="width: 28rem;">
+            <div class="card-body">
+                <h2 class="card-title"><button type="button" class="btn-lg btn-outline-light">Lyrics</button></h2>
+                <p class="lyrics-text"></p>
+                <a href="#" class="card-link"></a>
+                <a href="#" class="card-link"></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        /*function getArtistSongs() {
+            $.ajax({
+                url: "http://itunes.apple.com/search",
+                data: {term: "jack+johnson", media: "music"},
+                method: "POST"
+            }).then(function (response) {
+                
+                console.log(response);
+                //console.log(response.results);
+                //const info = JSON.parse(response);
+                //console.log(info);
+                //console.log(info.results);
+                //console.log(info.results[0]);
+                //console.log(info.results[0].artistName);
+                
+                
+                //var itunesArtistName = $("<h1>").text(info.results[0].artistName);
+                
+                //var itunesArtistImage = $("<img>").attr("src", info.results[0].artworkUrl100);
+                var itunesSongName = $("<p>").text(info.results[0].trackName);
+                //var itunesArtistAudio = $("<audio controls>").attr("src", info.results[0].previewUrl);
+                console.log(info.results[0]);
+                $("#five-songs")
+                    //.append(itunesArtistName)
+                    //.append(itunesArtistImage)
+                    .append(itunesSongName)
+                    //.append(itunesArtistAudio);
+                    
+                
+                return info;
+            });
+           
+        }
+        getArtistSongs();*/
+
+
+
+
+
+    var artist = $("#nameArtist").text();
+    var title = "Better Together";
+    var queryURL = "https://api.lyrics.ovh/v1/" + artist + "/" + title
+    
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function(response) {
+            console.log(response.lyrics);
+        });
+    </script>
+</body>
+
+</html>

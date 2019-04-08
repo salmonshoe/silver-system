@@ -1,0 +1,146 @@
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body.home {
+   background-image:url(https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  }
+
+body.index {
+  background-image:url(https://visualcocaine.org/public/uploads/large/11509553078rnclxtvxxnumzzxkc5nmmvgxehdu4hnmf8ugwxmnoi8zpsxbfjgtlbd8rud5c42ptntfdwekcpiknsdg4k6zcxtcfgkqmk8pepzc.jpg);
+}
+  
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  
+  .onTour {
+    font-size: 35px;
+    float: right;
+    background-color: whitesmoke;
+    background: rgba(255,255,255,0.5);
+    text-align: center;
+    
+  }
+
+  .jumbotron {
+    text-align: center;
+    font-family: 'Offside', cursive;
+    color: white;
+  }
+  
+  .artist {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 20px;
+  }
+
+  .header {
+    font-size: 75px;
+  }
+  
+  .btn-primary, .jumbotron, .artistCard {
+    background-color: transparent;
+  }
+  
+  .navButtons, .artistSearch, .card, .lyricsCard {
+    float: left;
+  }
+  
+  .btn-primary {
+    border: solid 2px gray;
+    color: black;
+  }
+  
+  .btn-primary:hover {
+        background-color: lightgray;
+  }
+  
+  .artistSearch {
+    font-family: 'Offside', cursive;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .artistCard {
+  text-align: center;
+  padding: 10px;
+  -webkit-box-shadow:0px 0px 81px 30px #b6aeae ;
+  -moz-box-shadow:0px 0px 81px 30px #b6aeae ;
+  box-shadow:0px 0px 81px 30px #b6aeae ;
+  }
+
+  .card-title {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+  }
+  
+  .topArtists {
+    font-size: 40px;
+    font-family: 'Offside', cursive;
+    color: white;
+  }
+  
+  #artistInfo { 
+    font-size: 40px;
+    font-family: 'Offside', cursive;
+    color: white;
+    padding-left: 10px;
+
+}
+
+  .lyricsCard {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border:5px double #e5dcdc;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Offside', cursive;
+  }
+  
+  .infoCard {
+  margin-top: 15px;
+  -webkit-box-shadow:0px 0px 66px 14px #f6eeee ;
+  -moz-box-shadow:0px 0px 66px 14px #f6eeee ;
+  box-shadow:0px 0px 66px 14px #f6eeee ;
+  display: flex;
+  overflow: auto;
+  }
+
+  .audioPreview {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    -webkit-box-shadow:0px 0px 66px 14px #f6eeee ;
+    -moz-box-shadow:0px 0px 66px 14px #f6eeee ;
+    box-shadow:0px 0px 66px 14px #f6eeee ;
+    width: 25rem;
+  }
+
+  .playButton, .stopButton {
+    color: white;
+    font-size: 30px;
+    border: 2px solid lightgray;
+  }
+
+  button{
+    margin:10px;
+    background-color: transparent;
+    border: solid 2px lightgray;
+    padding: 10px;
+    display: block;
+}
+
+#buttons-view{
+  flex-direction: column;
+}
+/* .card-body{
+  display: flex;
+} */
