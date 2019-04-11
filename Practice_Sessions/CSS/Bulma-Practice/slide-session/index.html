@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!--<link rel="stylesheet" href="debug.css">-->
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .hero -->
+    <section class="hero has-background-grey">
+        <div class="hero-body">
+            <div class="container">
+                <figure class="image center">
+                    <!--You can specify the dimensions of the image onload ex: is-128x128 -->
+                    <img src="https://bulma.io/images/bulma-logo-white.png" style="max-width: 256px;" alt="first image">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- /.hero-->
+
+    <!-- .section-->
+    <div class="section has-background-dark">
+        <div class="container">
+            <div class="columns">
+                <!--Bulma does the work of adjusting columns so long as you have .column nested in .columns nested in .container
+                    These columns are mobile responsive and will stack on one another as the device window gets smaller -->
+                <!--notification class acts like a containter and places a border on the div element nested inside of it and is bolded-->
+                <!-- .notification can be modified with the classes of modifiers from Bulma ex: "is-primary"-->
+                <div class="column">
+                    <article class="media notification is-info">
+                        <figure class="media-left">
+                            <span class="icon is-large">
+                                <i class="fab fa-css3-alt"></i>
+                            </span>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <h1 class="title fa-2x is-size-4">Bulma?</h1>
+                                <p class="is-size-5">
+                                    <!--You can use .is-size-# to change the size of text, numbers range from 1 to 7. Smaller number is larger text-->
+                                    Bulma is a modern CSS framework from @jgthms, based on Flexbox.
+                                    Using Bulma, we can describe our website's design using just classes.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="column">
+                    <div class="notification is-primary">
+                        <h1 class="title is-size-4">...Flexbox?</h1>
+                        <p class="is-size-5">
+                            Flexbox is a CSS spec that makes sectioning and aligning more natural.
+                            We don't need to know Flexbox but it's how Bulma works behind-the-scenes. <span
+                                class="emoticon">⦤(^ー^)⦥</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="notification is-warning">
+                        <h1 class="title is-size-4">...Classes?</h1>
+                        <p class="is-size-5">
+                            Instead of writing our CSS per-element, we can use predefined classes.
+                            With enough classes, we can describe our website design using semantics. <span
+                                class="emoticon">٩(^ᴗ^)۶</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.section-->
+</body>
+
+</html>
