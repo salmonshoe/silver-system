@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--<script src="sandbox.js"></script>-->
+    <!--<script src='dataType_String02.js'></script>-->
+    <!--<script src='dataType_Numbers.js'></script>-->
+    <!--<script src='dataType_Arrays.js'></script>-->
+    <!--<script src='dataType_Boolean.js'></script>-->
+    <script>
+        //Type Conversion - change one data type to another
+        let score = '100';
+
+        //Convert to Number
+        score = Number(score); //Takes the string, and returns it as a number
+        console.log(score + 1); //You'll get concatenation, not the addition. Must reassign it to change value.
+        //You can check what data type a variable is by using the typeof operator
+        console.log(typeof score);
+
+        //Convert to String
+        let result = String(50);
+        console.log(result, typeof result);
+
+        //Convert to a Boolean
+        let outcome = Boolean(100); //Positive numbers are truthy vales
+        let whaa = Boolean(0); //Negative numbers and Zero are falsey values
+        let weird = 
+        console.log(outcome, typeof outcome);
+        console.log(whaa, typeof whaa);
+    </script>
+</body>
+
+</html>
