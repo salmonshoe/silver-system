@@ -32,6 +32,7 @@ app.get('/view-table', (request, response) => {
 app.get('/api-tables', (req, res) => {
     res.json(place.data);
 });
+console.log(place.data);
 
 // Start the server to listen for client requests.
 app.listen(PORT, (error)=> {
