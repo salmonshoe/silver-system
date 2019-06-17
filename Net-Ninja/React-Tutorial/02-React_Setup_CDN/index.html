@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!--Top script is the core react lobrary and the bottom is the DOM react library. Need both loaded.-->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app"></div>
+    <script type="text/babel">
+        //JS classes are a way to blueprint objects. The class will represent a component and each React class must have at least one function to render content.
+        class App extends React.Component {
+            render()  { //render method is what is responsible for rendering the template we choose
+                return ( //JSX template goes inside what the render returns and it is HTML content pushed inside JavaScript. Have only one root element, everything else must be nested inside.
+                  <div className="app-content">
+                    <h1>Hey, ninjas!</h1>
+                  </div>
+                )
+            }
+        }
+
+        React.DOM.render(<App />, document.getElementById('app')); //render a component to the DOM with the render method to React.DOM. Pass a parameter on which component to input inside an HTML tag and where to render the value to.
+    </script>
+</body>
+
+</html>
